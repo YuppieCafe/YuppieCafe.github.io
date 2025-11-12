@@ -1,0 +1,273 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Yuippie Café</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primario-claro: #f9f6f2;
+            --primario-oscuro: #5a3e1b;
+            --secundario: #e0cba8;
+            --blanco: #ffffff;
+            --negro: #000000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--primario-claro);
+            color: var(--negro);
+        }
+
+        header {
+            background: var(--secundario);
+            color: var(--primario-oscuro);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--primario-oscuro);
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: var(--primario-oscuro);
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            gap: 30px;
+        }
+
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secundario);
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 2.4rem;
+            color: var(--primario-oscuro);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--blanco);
+            color: var(--primario-oscuro);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+        }
+
+        .centered {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: var(--primario-oscuro);
+            color: var(--blanco);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Yuippie Café</h1>
+        <p>Cupcakes, café y estilo joven</p>
+    </header>
+
+
+
+   <section id="Pastelillos">
+    <h2>Nuestros Pastelillos</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://www.allrecipes.com/thmb/VOysaJLJhYpeta2yg7F4mT2Eiq4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/174347-quick-and-almosy-professional-buttercream-icing-ddmfs-beauty-2x1-389ff5ef891449a587f75773d4a92b68.jpg" alt="Cupcake clásico">
+            <h3>CupCake con frosting</h3>
+            <p>Suave, esponjoso. Un favorito eterno.</p>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <img src="https://www.allrecipes.com/thmb/VOysaJLJhYpeta2yg7F4mT2Eiq4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/174347-quick-and-almosy-professional-buttercream-icing-ddmfs-beauty-2x1-389ff5ef891449a587f75773d4a92b68.jpg" alt="Cupcake clásico">
+            <h3>CupCake con frosting de vainilla </h3>
+            <p>Suave, esponjoso y con el glaseado más dulce. Un favorito eterno.</p>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <img src="https://cdn.recetasderechupete.com/wp-content/uploads/2021/10/frosting-choco-4.jpg" alt="Cupcake clásico">
+            <h3>CupCake con frosting de chcolate</h3>
+            <p>Suave, esponjoso y con el glaseado con mas chocolate. Un favorito eterno.</p>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <img src="https://i.imgur.com/MAPHa6h.jpeg" alt="Cupcake clásico">
+            <h3>CupCake con frosting y base de vainilla y chocolate </h3>
+            <p>Suave, esponjoso y con la conbinacion de vainilla y chocolate . Un favorito eterno.</p>
+        </div>
+    </div>
+</section>
+
+<section id="cafes">
+    <h2>Nuestros Cafés</h2>
+    <div class="grid">
+        <div class="card">
+            <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ34PgjAJQDip4gEYrPWirxYy8AurPuTkpK7A&s alt="Yuppie Americano">
+            <h3>Yuppie Americano</h3>
+            <p>Clásico, puro y equilibrado. Acompañante ideal de cualquier pastelito.</p>
+        </div>
+        <div class="card">
+            <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/3SIAEYJK7VG5BBHMOFFQLDQEKI.jpg" alt="Yupiccino">
+            <h3>Yupiccino</h3>
+            <p>Cappuccino suave con espuma de leche. Elegante y energético.</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfjP4Yi-SLdetjzAGyvSwB7U2k2MdMOAFFCw&s" alt="Yuppie Moca">
+            <h3>Yuppie Moca</h3>
+            <p>Chocolate + café en su mejor versión. Dulce y fuerte a la vez.</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQccVvXB8wq3izhhNIzKV23-5tYnHO3NNn05A&s" alt="Yuppie Frío">
+            <h3>Yuppie Frío</h3>
+            <p>Café suave y refrescante, preparado en frío para resaltar su sabor y aroma natural. Servido con hielo, ideal para cualquier momento del día.</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSv5ZwnBwCFcoGgxLrFNg1N0-ih7041QvL-A&s" alt="Yuppie con leche">
+            <h3>Yuppie con leche</h3>
+            <p>La versión más cremosa del Yuppie: café frío con un toque de leche, servido con hielo. Suave, refrescante y equilibrado.</p>
+        </div>
+    </div>
+</section>
+
+<section id="Bebidas extra">
+    <h2>Bebidas extras</h2>
+    <div class="card">
+        <img src="https://image.tuasaude.com/media/article/go/jh/suco-de-laranja_67324.jpg" alt="Jugo de naranja" />
+        <h3>Jugo de naranja</h3>
+        <p> Jugo natural refrescante, ideal para el calor</p>
+    </div>
+
+    <div class="card">
+        <img src="https://www.recetasnestle.com.py/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/2518e4e8bdee2119ba3bf1dd253e5d95.jpg?itok=-SyRrCWN" alt="Jugo de durazno" />
+        <h3>Jugo de durazno</h3>
+        <p> Jugo natural refrezcante un ideal para el calor </p>
+    </div>
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROfqo59MSQ6RK5Va6ELDtD81-M0luCnK1KiA&s" alt="Chocolatada" />
+        <h3>Chocolatada</h3>
+        <p>Perfecto para acompañar el cupcake</p>
+    </div>
+
+
+
+    <section id="historia">
+        <h2>Nuestra Historia</h2>
+        <p class="centered">
+        YuppieCafé nació de un simple cupcake y una gran conversación entre amigos. En una clase 8 jovenes teniendo una gran idea de una miniempresa y apasionados por el café y los pastelillos en una clase donde un proyecto hablaba de crear una miniempresa se preguntaron:
+    ¿Y si creamos un lugar donde se vendan cafe y pastelillos donde los jovenes sean el objetivo principal?
+        Asi surgio YuppieCafé, con una idea clara: ofrecer más que bebidas o pasteles.Crear un espacio donde los jovenes y estudiantes no vengan solo por el sabor sino por la experiencia, un rincón con aromas que despierten recuerdos y un equipo que te reciba cálidamente
+        el nombre "Yuppie", que solía representar jovenes urbanos con estilo y energía, lo resignificamos: para nosotros, un yuppie es alguien que cree en sí mismo, que se reinventa, que valora un buen pastelillo con cafe como un ritual diario
+        Desde el primer Espresso servido hasta hoy, Mantenemos esa esencia: Hacer todo con amor, calidad y proposito. YuppieCafé no es solo una cafetería es un lugar para sentirse mejor.
+        </p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p class="centered">
+            📍 Heanves Kindom,Florida<br>
+            ☎️ +595 952 490 774<br>
+            📧 yuppie.cafe29@gmail.com<br>
+            🕒 Abierto de lunes a sábados - 8:00 a 20:00<br>
+            🕒 Abierto domingos - 8:00 a 17:00
+        <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa - Colegio Heaven's Kingdom Christian School</title>
+
+
+    <iframe
+        src="https://www.google.com/maps?q=-25.3522685,-57.5056921&z=17&output=embed"
+        width="100%"
+        height="500"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</body>
+</html>
+
+    <footer>
+        &copy; 2025 Yuippie Café. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
